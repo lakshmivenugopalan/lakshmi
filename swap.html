@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        swapcase = function swapcase(str) {
+            return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, chr) {
+                return chr ? match.toUpperCase() : match.toLowerCase();
+            });
+        }
+        console.log(swapcase('The Quick Brown Fox '));
+    </script>
+</body>
+
+</html>
